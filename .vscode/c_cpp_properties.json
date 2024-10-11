@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "SDCC",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            // total hack for SDCC
+            "defines": [
+                "UINT8PV=",
+                "__data=",
+                "__code=",
+                "__xdata=",
+                "__sbit=",
+                "__sfr=",
+                "__sfr16=",
+                "__at(v)=extern"
+            ],
+            "macFrameworkPath": [
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+            ],
+            "compilerPath": "/opt/homebrew/bin/sdcc",
+            "cStandard": "c99"
+        }
+    ],
+    "version": 4
+}

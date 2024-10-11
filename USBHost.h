@@ -101,10 +101,10 @@ typedef struct _UsbDevice
 } UsbDevice, *PUsbDevice;
 
 void resetRootHub(unsigned char i);
-void initUSB_Host();
-unsigned char checkRootHubConnections();
+void initUSB_Host(void);
+unsigned char checkRootHubConnections(void);
 
 void resetHubDevices(unsigned char hubindex);
-void pollHIDdevice();
+void pollHIDdevice(void);
 
 #endif
